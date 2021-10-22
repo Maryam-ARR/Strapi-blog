@@ -1,0 +1,213 @@
+nav {
+  .nav1 {
+    background-color: $black;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.5rem 0.8rem;
+    font-family: "calibri", Helvetica, sans-serif;
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      .nav1col1 {
+        display: none;
+        max-width: 50%;
+        padding: 0px 15px;
+        text-align: left;
+        width: 100%;
+        @media (min-width: $d) {
+          display: block;
+        }
+        .nav1tel {
+          background-color: transparent;
+          border-right: 1px solid $solitude;
+          color: $solitude;
+          padding: 0rem 0.5rem;
+          text-decoration: none;
+          &:hover {
+            color: $link-water;
+            text-decoration: none;
+          }
+        }
+        .nav1telicon {
+          background-color: transparent;
+          color: $solitude;
+          text-decoration: none;
+          &:hover {
+            color: $link-water;
+            text-decoration: none;
+          }
+        }
+        .nav1sn {
+          color: $solitude;
+          padding-left: 0.5rem;
+          text-decoration: none;
+          background-color: transparent;
+          &:hover {
+            color: $link-water;
+            text-decoration: underline;
+          }
+        }
+      }
+      .nav1col2 {
+        max-width: 100%;
+        padding: 0px;
+        text-align: right;
+        width: 100%;
+        @media (min-width: $d) {
+          max-width: 50%;
+          padding: 0px 15px;
+        }
+        .nav1link {
+          color: $solitude;
+          text-transform: uppercase;
+          padding: 0rem 0.5rem;
+          text-decoration: none;
+          background-color: transparent;
+          &:hover {
+            color: $link-water;
+            text-decoration: underline;
+          }
+        }
+        .nav1linkicon {
+          color: $solitude;
+          background-color: transparent;
+          &:hover {
+            color: $link-water;
+          }
+        }
+        .nav1linkuser {
+          color: $solitude;
+          text-transform: uppercase;
+          padding: 0rem 0.5rem;
+          text-decoration: none;
+          background-color: transparent;
+          &:hover {
+            color: $link-water;
+            text-decoration: none;
+          }
+        }
+        .nav1linkb {
+          color: $dodger-blue;
+          text-transform: uppercase;
+          padding: 0rem 0.5rem;
+          text-decoration: none;
+          background-color: transparent;
+          &:hover {
+            color: $cobal;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .nav2 {
+    background-color: $white;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 37px;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+      0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+    @media (min-width: $d) {
+      display: block;
+    }
+    ul {
+      list-style: none;
+      margin-inline-end: 0 !important;
+      margin-inline-start: 0 !important;
+      margin: 0;
+      padding-inline-end: 0 !important;
+      padding-inline-start: 0 !important;
+      padding: 0 20px;
+    }
+    button {
+      @media (min-width: $d) {
+        display: none;
+      }
+    }
+    .nav21 {
+      clear: both;
+      text-align: center;
+      display: none;
+      @media (min-width: $d) {
+        display: block;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .searchIcon {
+          width: 36px;
+          .searchLi {
+            opacity: 1;
+            transition: 0.3s ease;
+            &:hover {
+              width: 36px !important;
+              opacity: 0.5;
+              cursor: pointer;
+            }
+          }
+        }
+        li {
+          font-family: "gotham", Helvetica, sans-serif;
+          font-size: 1rem;
+          padding: 10px 10px;
+          text-transform: uppercase;
+          width: 20%;
+          a {
+            display: block;
+            letter-spacing: 0.5em;
+            line-height: 70px;
+            padding: 0 20px;
+            background-color: $white;
+            color: $black !important;
+            text-align: center;
+            text-decoration: none;
+            transition: 0.07s ease-in;
+            &:hover {
+              color: $link-water !important;
+              cursor: pointer;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .hide-menu {
+      pointer-events: none;
+      visibility: hidden;
+      position: absolute;
+    }
+    .nav22 {
+      clear: both;
+      text-align: center;
+      li {
+        font-family: "gotham", Helvetica, sans-serif;
+        font-size: 1rem;
+        padding: 10px 10px;
+        text-transform: uppercase;
+        a {
+          background-color: $white;
+          color: $black !important;
+          display: block;
+          letter-spacing: 0.5em;
+          line-height: 70px;
+          padding: 0 20px;
+          text-align: center;
+          text-decoration: none;
+          transition: 0.07s ease-in;
+          &:hover {
+            color: $link-water !important;
+            cursor: pointer;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

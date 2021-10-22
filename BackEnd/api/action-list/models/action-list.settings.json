@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "action_lists",
+  "info": {
+    "name": "ActionList"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "action": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "action_lists"
+    },
+    "comment": {
+      "via": "action_lists",
+      "model": "comment"
+    }
+  }
+}

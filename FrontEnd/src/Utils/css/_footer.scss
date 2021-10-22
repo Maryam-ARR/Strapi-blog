@@ -1,0 +1,33 @@
+footer {
+  position: block;
+  bottom: 0;
+  height: 117px;
+  background: rgb(240, 107, 72);
+  background: linear-gradient(
+    139deg,
+    rgba(240, 107, 72, 1) 0%,
+    rgba(235, 141, 43, 1) 88%,
+    rgba(240, 162, 144, 1) 100%
+  );
+  box-shadow: 0px -3px 40px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 40px 1rem !important;
+  width: 100%;
+  //margin: 0 -15px;
+  .footerCont {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    .bordertop {
+      border-top: 1px solid $solitude !important;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0px;
+      padding: 7px 0px 7px;
+      color: $solitude !important;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "variables";
+* {
+  box-sizing: border-box;
+}
+::selection {
+  color: #ffffff !important;
+  background: rgb(0, 0, 0 / 0.25) !important;
+}
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: "calibri", Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 100%;
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+  position: relative;
+}
+.container-body {
+  background: $white-smoke;
+  margin-top: 49px;
+  overflow: hidden;
+  padding: 0 20px 20px;
+  display: block;
+  min-height: 100vh;
+  margin-top: 37+12px;
+  @media (min-width: $d) {
+    margin-top: 37+48+5px;
+  }
+}
+
+.loading {
+  background-image: url(../Img/loading.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 31%;
+  right: 46%;
+}
+.loading-small {
+  background-image: url(../Img/loading.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+}
+@import "header";
+@import "index";
+@import "solo";
+@import "footer";
+@import "test";

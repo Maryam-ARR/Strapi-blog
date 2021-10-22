@@ -1,0 +1,318 @@
+h1 h2 h3 h4 h5 span p {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 0em;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+button {
+  font-family: "calibri", Helvetica, sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  letter-spacing: normal !important;
+  line-height: 1.5 !important;
+  text-transform: none !important;
+  &:hover {
+    outline: none;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.click-outside {
+  position: fixed;
+  z-index: 1300;
+  inset: 0px;
+  background-color: transparent;
+}
+
+.form-control:focus {
+  border-color: $shuttle-grey;
+  border-right-width: 1px !important;
+  box-shadow: 0px 0px 2px $shuttle-grey;
+}
+.button-tool {
+  background: $raven !important;
+  border-radius: 0;
+  border-radius: 0.25rem;
+  border: 0;
+  color: $white !important;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.375rem 0.75rem !important;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  white-space: normal;
+  margin-right: 0.25rem !important;
+  &:hover {
+    background-color: $shuttle-grey !important;
+    background: $black;
+    border-color: $shuttle-grey !important;
+    border-radius: 0.15rem;
+    border: 0;
+    color: $white;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: normal;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+      0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+.button-danger {
+  background: $danger !important;
+  border-radius: 0;
+  border-radius: 0.25rem;
+  border: 0;
+  color: $white !important;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.375rem 0.75rem !important;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  white-space: normal;
+  margin-right: 0.25rem !important;
+  &:hover {
+    background-color: $dangerhover !important;
+    background: $black;
+    border-color: $dangerhover !important;
+    border-radius: 0.15rem;
+    border: 0;
+    color: $white;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: normal;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+      0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+.container-cald {
+  margin: 30px auto;
+  max-width: 1200px;
+}
+.button-popup {
+  background: radial-gradient(farthest-corner at 40px 40px, $color, $color1);
+  border: 0;
+  border-radius: 4px;
+  color: $white !important;
+  padding: 4px 17px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background: 0 0;
+    box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.57);
+    color: $raven !important;
+    transition: all 0.3s ease 0s;
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.invalid-feedback {
+  display: block;
+  color: $erreur !important;
+}
+
+.tr {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  visibility: visible;
+  .lo {
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    background: $white;
+    border-color: $shuttle-grey;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    color: $black;
+    display: inline-block;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 7px 16px 9px;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    visibility: visible;
+    width: 212px;
+    &:hover {
+      text-decoration: none;
+      border-color: $shuttle-grey;
+      color: $black;
+      cursor: pointer;
+    }
+    .ap {
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
+      align-items: center;
+      box-sizing: inherit;
+      color: $black;
+      display: flex;
+      font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      text-rendering: optimizeLegibility;
+      visibility: visible;
+      .vc {
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: transparent;
+        box-sizing: inherit;
+        color: $black;
+        display: block;
+        font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        height: 25;
+        line-height: 20px;
+        margin-right: 8px;
+        margin-top: -2px;
+        text-align: left;
+        text-rendering: optimizeLegibility;
+        visibility: visible;
+        width: 25;
+      }
+    }
+  }
+}
+
+.ant-picker-calendar-date-content {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+}
+.button-cald {
+  margin: 1px !important;
+  border: 1px solid #1890ff !important;
+  color: #1890ff !important;
+  padding: 0.375rem 0.75rem !important;
+}
+
+.container-comment {
+  border-bottom: solid 1px gray;
+  border-radius: 2px;
+  padding: 3px 5px;
+  .span-commnent {
+    font-size: 17px !important;
+    user-select: none !important;
+  }
+  .span-thumbs {
+    cursor: pointer;
+    transition: opacity 500ms ease;
+    .opacity-span {
+      opacity: 0.5;
+      transition: opacity 500ms ease;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  .ant-comment-nested {
+    margin: 0px !important;
+    display: flex !important;
+    flex-direction: row;
+    .MuiBadge-root {
+      margin-right: 10px !important;
+      .MuiBadge-badge {
+        font-size: 0.55rem !important;
+        height: 16px !important;
+        width: 16px !important;
+        user-select: none !important;
+      }
+    }
+    .span-comment-dislike {
+      margin-top: 11px !important;
+      .MuiBadge-anchorOriginTopRightRectangle {
+        top: -4px !important;
+      }
+    }
+  }
+  .ant-comment-actions {
+    margin-top: 8px !important;
+  }
+}
+.span-text {
+  font-family: "calibri", Helvetica, sans-serif !important;
+}
+.snackbar-fixed {
+  width: 30%;
+  position: absolute !important;
+  bottom: 5vh !important;
+  .alert-fixed {
+    width: 100%;
+  }
+}
+.snackbar-fixed-articles {
+  width: 30%;
+  position: absolute !important;
+  bottom: 19vh !important;
+  .alert-fixed {
+    width: 100%;
+  }
+}
+.login {
+  @apply rounded-full absolute inset-0 w-0 h-0 transform transition-transform duration-1000 ease-in-out;
+}
+.login1 {
+  @apply bg-gray-800 z-80 group-hover:w-80 group-hover:h-80 group-hover:-translate-x-16 group-hover:translate-y-76;
+}
+.login2 {
+  @apply bg-gray-600 z-60 group-hover:w-96 group-hover:h-96 group-hover:-translate-x-120 group-hover:-translate-y-16;
+}
+.login3 {
+  @apply bg-gray-500 z-30 group-hover:w-388 group-hover:h-388 group-hover:translate-x-32 group-hover:-translate-y-16;
+}
+.login4 {
+  @apply bg-gray-200 z-20 group-hover:w-135 group-hover:h-135 group-hover:-translate-x-84 group-hover:-translate-y-16;
+}
+.login5 {
+  @apply bg-gray-100 z-10  group-hover:w-280 group-hover:h-280 group-hover:-translate-x-240 group-hover:-translate-y-132;
+}
+.ant-picker-calendar-date-content::-webkit-scrollbar {
+  display: none;
+}

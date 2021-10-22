@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/visit-count",
+      "handler": "visit-count.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/visit-count/inc",
+      "handler": "visit-count.inc",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/visit-count",
+      "handler": "visit-count.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/visit-count",
+      "handler": "visit-count.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

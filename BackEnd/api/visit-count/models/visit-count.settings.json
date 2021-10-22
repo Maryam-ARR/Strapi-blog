@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "visit_count",
+  "info": {
+    "name": "VisitCount",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "count": {
+      "type": "biginteger"
+    }
+  }
+}
